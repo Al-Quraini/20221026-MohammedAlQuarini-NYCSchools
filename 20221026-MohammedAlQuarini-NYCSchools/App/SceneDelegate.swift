@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         // create a navigation
-        let firstViewController = ViewController()
+        let firstViewController = SchoolsTableViewController()
         let navigation = UINavigationController(rootViewController: firstViewController)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

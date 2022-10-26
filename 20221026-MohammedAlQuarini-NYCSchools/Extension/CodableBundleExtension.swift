@@ -12,7 +12,7 @@ import Foundation
 extension Bundle {
   func decode<T: Codable>(_ file: String) throws -> T {
     // 1. Locate the json file
-    guard let url = self.url(forResource: file, withExtension: nil) else {
+    guard let url = self.url(forResource: file, withExtension: "json") else {
         throw CodableBundleError.pathError
     }
     

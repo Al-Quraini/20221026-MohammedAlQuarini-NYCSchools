@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2ADE02CE2909B79B0039955E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02CD2909B79B0039955E /* AppDelegate.swift */; };
 		2ADE02D02909B79B0039955E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02CF2909B79B0039955E /* SceneDelegate.swift */; };
-		2ADE02D22909B79B0039955E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02D12909B79B0039955E /* ViewController.swift */; };
+		2ADE02D22909B79B0039955E /* SchoolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02D12909B79B0039955E /* SchoolsTableViewController.swift */; };
 		2ADE02D72909B79D0039955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADE02D62909B79D0039955E /* Assets.xcassets */; };
 		2ADE02DA2909B79D0039955E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADE02D82909B79D0039955E /* LaunchScreen.storyboard */; };
 		2ADE02E82909C3D40039955E /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02E72909C3D40039955E /* CodableBundleExtension.swift */; };
@@ -17,13 +17,17 @@
 		2ADE02ED2909C4CB0039955E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02EC2909C4CB0039955E /* NetworkManager.swift */; };
 		2ADE02EF2909C4E00039955E /* NetworkUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02EE2909C4E00039955E /* NetworkUrls.swift */; };
 		2ADE02F12909C5090039955E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F02909C5090039955E /* NetworkError.swift */; };
+		2ADE02F32909D7DE0039955E /* NYCHighSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */; };
+		2ADE02F52909D99C0039955E /* high_schools.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADE02F42909D99C0039955E /* high_schools.json */; };
+		2ADE02F72909DEAB0039955E /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */; };
+		2ADE02F92909F0730039955E /* SchoolDetailVoiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2ADE02CA2909B79B0039955E /* 20221026-MohammedAlQuarini-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20221026-MohammedAlQuarini-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADE02CD2909B79B0039955E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADE02CF2909B79B0039955E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2ADE02D12909B79B0039955E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ADE02D12909B79B0039955E /* SchoolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewController.swift; sourceTree = "<group>"; };
 		2ADE02D62909B79D0039955E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADE02D92909B79D0039955E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADE02DB2909B79D0039955E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +36,10 @@
 		2ADE02EC2909C4CB0039955E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2ADE02EE2909C4E00039955E /* NetworkUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUrls.swift; sourceTree = "<group>"; };
 		2ADE02F02909C5090039955E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolModel.swift; sourceTree = "<group>"; };
+		2ADE02F42909D99C0039955E /* high_schools.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = high_schools.json; sourceTree = "<group>"; };
+		2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableViewCell.swift; sourceTree = "<group>"; };
+		2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailVoiewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +96,9 @@
 		2ADE02E22909B7BF0039955E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2ADE02D12909B79B0039955E /* ViewController.swift */,
+				2ADE02D12909B79B0039955E /* SchoolsTableViewController.swift */,
+				2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */,
+				2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 		2ADE02E52909BF1D0039955E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADE02E72909C3D40039955E /* CodableBundleExtension.swift */,
+				2ADE02F42909D99C0039955E /* high_schools.json */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 			files = (
 				2ADE02DA2909B79D0039955E /* LaunchScreen.storyboard in Resources */,
 				2ADE02D72909B79D0039955E /* Assets.xcassets in Resources */,
+				2ADE02F52909D99C0039955E /* high_schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +221,11 @@
 				2ADE02ED2909C4CB0039955E /* NetworkManager.swift in Sources */,
 				2ADE02F12909C5090039955E /* NetworkError.swift in Sources */,
 				2ADE02E82909C3D40039955E /* CodableBundleExtension.swift in Sources */,
-				2ADE02D22909B79B0039955E /* ViewController.swift in Sources */,
+				2ADE02F92909F0730039955E /* SchoolDetailVoiewController.swift in Sources */,
+				2ADE02D22909B79B0039955E /* SchoolsTableViewController.swift in Sources */,
 				2ADE02CE2909B79B0039955E /* AppDelegate.swift in Sources */,
+				2ADE02F32909D7DE0039955E /* NYCHighSchoolModel.swift in Sources */,
+				2ADE02F72909DEAB0039955E /* NYCSchoolTableViewCell.swift in Sources */,
 				2ADE02EB2909C41B0039955E /* CodableBundleEnum.swift in Sources */,
 				2ADE02EF2909C4E00039955E /* NetworkUrls.swift in Sources */,
 				2ADE02D02909B79B0039955E /* SceneDelegate.swift in Sources */,
