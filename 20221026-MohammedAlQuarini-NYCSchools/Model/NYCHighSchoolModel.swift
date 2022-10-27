@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NYCHighSchoolModel : Codable {
+class NYCHighSchoolModel : NSObject, Codable {
     let dbn : String?
     let schoolName : String?
     let overveiwParagraph : String?

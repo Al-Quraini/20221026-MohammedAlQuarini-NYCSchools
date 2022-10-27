@@ -20,7 +20,8 @@
 		2ADE02F32909D7DE0039955E /* NYCHighSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */; };
 		2ADE02F52909D99C0039955E /* high_schools.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ADE02F42909D99C0039955E /* high_schools.json */; };
 		2ADE02F72909DEAB0039955E /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */; };
-		2ADE02F92909F0730039955E /* SchoolDetailVoiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */; };
+		2ADE02FD2909FF770039955E /* SchoolScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02FC2909FF770039955E /* SchoolScoresViewController.m */; };
+		2ADE030C290A30830039955E /* SATScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE030B290A30830039955E /* SATScore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,11 @@
 		2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolModel.swift; sourceTree = "<group>"; };
 		2ADE02F42909D99C0039955E /* high_schools.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = high_schools.json; sourceTree = "<group>"; };
 		2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableViewCell.swift; sourceTree = "<group>"; };
-		2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailVoiewController.swift; sourceTree = "<group>"; };
+		2ADE02FA2909FF760039955E /* 20221026-MohammedAlQuarini-NYCSchools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "20221026-MohammedAlQuarini-NYCSchools-Bridging-Header.h"; sourceTree = "<group>"; };
+		2ADE02FB2909FF770039955E /* SchoolScoresViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoolScoresViewController.h; sourceTree = "<group>"; };
+		2ADE02FC2909FF770039955E /* SchoolScoresViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolScoresViewController.m; sourceTree = "<group>"; };
+		2ADE030A290A30730039955E /* SATScore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SATScore.h; sourceTree = "<group>"; };
+		2ADE030B290A30830039955E /* SATScore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATScore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				2ADE02D12909B79B0039955E /* SchoolsTableViewController.swift */,
-				2ADE02F82909F0730039955E /* SchoolDetailVoiewController.swift */,
 				2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */,
+				2ADE02FB2909FF770039955E /* SchoolScoresViewController.h */,
+				2ADE02FC2909FF770039955E /* SchoolScoresViewController.m */,
+				2ADE02FA2909FF760039955E /* 20221026-MohammedAlQuarini-NYCSchools-Bridging-Header.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				2ADE02F22909D7DE0039955E /* NYCHighSchoolModel.swift */,
+				2ADE030A290A30730039955E /* SATScore.h */,
+				2ADE030B290A30830039955E /* SATScore.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 				TargetAttributes = {
 					2ADE02C92909B79B0039955E = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -221,12 +231,13 @@
 				2ADE02ED2909C4CB0039955E /* NetworkManager.swift in Sources */,
 				2ADE02F12909C5090039955E /* NetworkError.swift in Sources */,
 				2ADE02E82909C3D40039955E /* CodableBundleExtension.swift in Sources */,
-				2ADE02F92909F0730039955E /* SchoolDetailVoiewController.swift in Sources */,
 				2ADE02D22909B79B0039955E /* SchoolsTableViewController.swift in Sources */,
 				2ADE02CE2909B79B0039955E /* AppDelegate.swift in Sources */,
+				2ADE030C290A30830039955E /* SATScore.m in Sources */,
 				2ADE02F32909D7DE0039955E /* NYCHighSchoolModel.swift in Sources */,
 				2ADE02F72909DEAB0039955E /* NYCSchoolTableViewCell.swift in Sources */,
 				2ADE02EB2909C41B0039955E /* CodableBundleEnum.swift in Sources */,
+				2ADE02FD2909FF770039955E /* SchoolScoresViewController.m in Sources */,
 				2ADE02EF2909C4E00039955E /* NetworkUrls.swift in Sources */,
 				2ADE02D02909B79B0039955E /* SceneDelegate.swift in Sources */,
 			);
@@ -365,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7HR75ZCV8P;
@@ -382,6 +394,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alquraini.-0221026-MohammedAlQuarini-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "20221026-MohammedAlQuarini-NYCSchools/Controller/20221026-MohammedAlQuarini-NYCSchools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7HR75ZCV8P;
@@ -409,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alquraini.-0221026-MohammedAlQuarini-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "20221026-MohammedAlQuarini-NYCSchools/Controller/20221026-MohammedAlQuarini-NYCSchools-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -52,6 +52,8 @@ class SchoolsTableViewController: UITableViewController {
 extension SchoolsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        navigationController?.pushViewController(SchoolScoresViewController(), animated: true)
     }
 }
 
