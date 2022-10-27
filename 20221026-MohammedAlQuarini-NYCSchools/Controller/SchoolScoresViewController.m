@@ -7,6 +7,7 @@
 
 #import "SchoolScoresViewController.h"
 #import "SATScore.h"
+#import "NetworkManagerObjc.h"
 
 @interface SchoolScoresViewController ()
 @property (nonatomic, strong) NSString *dbn;
@@ -110,33 +111,18 @@
 }
 
 -(void) getSatScores {
-    NSString *string = [NSString stringWithFormat:@"https://data.cityofnewyork.us/resource/f9bf-2cp4.json?dbn=%@", self.dbn];
-    NSLog(@"%@", string);
-    NSString *stringUrl = string;
-    NSURL *url = [NSURL URLWithString:stringUrl];
-    [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        NSError *err;
-        NSArray *scores = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
-        
-        if(err) {
-            NSLog(@"Failed to serialize the json %@", err);
+    NSString *stringUrl = [NSString stringWithFormat:@"https://data.cityofnewyork.us/resource/f9bf-2cp4.json?dbn=%@", self.dbn];
+    NetworkManagerObjc *networkManager = NetworkManagerObjc.new;
+    [networkManager getSATScores:stringUrl withCompletionHandler:^(SATScore *score, NSError *err) {
+        if (err) {
             return;
         }
-        
-        for (NSDictionary *scoreDictionary in scores) {
-            SATScore *score = SATScore.new;
-            score.schoolName = scoreDictionary[@"school_name"];
-            score.numOfTakers = scoreDictionary[@"num_of_sat_test_takers"];
-            score.rdAvg = scoreDictionary[@"sat_critical_reading_avg_score"];
-            score.mthAvg = scoreDictionary[@"sat_math_avg_score"];
-            score.wrAvg = scoreDictionary[@"sat_writing_avg_score"];
-            
+        if (score != nil) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self configLabels:score];
             });
-            
         }
-    }] resume];
+    }];
+   
 }
 @end

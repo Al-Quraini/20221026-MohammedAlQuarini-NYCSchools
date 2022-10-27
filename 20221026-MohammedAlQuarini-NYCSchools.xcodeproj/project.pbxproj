@@ -22,6 +22,7 @@
 		2ADE02F72909DEAB0039955E /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02F62909DEAB0039955E /* NYCSchoolTableViewCell.swift */; };
 		2ADE02FD2909FF770039955E /* SchoolScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE02FC2909FF770039955E /* SchoolScoresViewController.m */; };
 		2ADE030C290A30830039955E /* SATScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE030B290A30830039955E /* SATScore.m */; };
+		2ADE030E290A63A10039955E /* NetworkManagerObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE030D290A63A10039955E /* NetworkManagerObjc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		2ADE02FC2909FF770039955E /* SchoolScoresViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolScoresViewController.m; sourceTree = "<group>"; };
 		2ADE030A290A30730039955E /* SATScore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SATScore.h; sourceTree = "<group>"; };
 		2ADE030B290A30830039955E /* SATScore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SATScore.m; sourceTree = "<group>"; };
+		2ADE030D290A63A10039955E /* NetworkManagerObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManagerObjc.m; sourceTree = "<group>"; };
+		2ADE030F290A63AC0039955E /* NetworkManagerObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManagerObjc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				2ADE02EC2909C4CB0039955E /* NetworkManager.swift */,
 				2ADE02F02909C5090039955E /* NetworkError.swift */,
 				2ADE02EE2909C4E00039955E /* NetworkUrls.swift */,
+				2ADE030D290A63A10039955E /* NetworkManagerObjc.m */,
+				2ADE030F290A63AC0039955E /* NetworkManagerObjc.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				2ADE02FD2909FF770039955E /* SchoolScoresViewController.m in Sources */,
 				2ADE02EF2909C4E00039955E /* NetworkUrls.swift in Sources */,
 				2ADE02D02909B79B0039955E /* SceneDelegate.swift in Sources */,
+				2ADE030E290A63A10039955E /* NetworkManagerObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7HR75ZCV8P;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "20221026-MohammedAlQuarini-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -410,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7HR75ZCV8P;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "20221026-MohammedAlQuarini-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
