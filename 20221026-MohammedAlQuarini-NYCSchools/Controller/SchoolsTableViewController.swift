@@ -51,9 +51,11 @@ class SchoolsTableViewController: UITableViewController {
 //MARK: - TableViewDelegate
 extension SchoolsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dbn = schools[indexPath.row].dbn
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = SchoolScoresViewController(dbn: dbn ?? "")
         
-        navigationController?.pushViewController(SchoolScoresViewController(), animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

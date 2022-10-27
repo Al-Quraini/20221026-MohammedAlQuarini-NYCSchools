@@ -5,8 +5,15 @@
 //  Created by Mohammed Al-Quraini on 10/26/22.
 //
 
-#ifndef SATScore_h
-#define SATScore_h
+#import <Foundation/Foundation.h>
 
+@interface SATScore : NSObject
 
-#endif /* SATScore_h */
+@property (strong, nonatomic) NSString *dbn;
+@property (strong, nonatomic) NSString *schoolName;
+@property (strong, nonatomic) NSString *numOfTakers;
+@property (strong, nonatomic) NSString *rdAvg;
+@property (strong, nonatomic) NSString *mthAvg;
+@property (strong, nonatomic) NSString *wrAvg;
+
+@end

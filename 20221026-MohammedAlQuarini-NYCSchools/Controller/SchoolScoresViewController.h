@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SchoolScoresViewController : UIViewController
-
+- (instancetype)initWithDbn:(NSString *)dbn;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -5,4 +5,9 @@
 //  Created by Mohammed Al-Quraini on 10/26/22.
 //
 
-#import <Foundation/Foundation.h>
+#import "SATScore.h"
+
+@implementation SATScore
+
+
+@end
