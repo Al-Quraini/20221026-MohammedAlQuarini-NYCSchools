@@ -101,7 +101,7 @@
         [_stackView.bottomAnchor constraintEqualToAnchor:[safeArea bottomAnchor] constant: -30],
     ]];
 }
-
+// map data to labels
 -(void) configLabels :(SATScore*) model  {
     [self.schoolName setText: [NSString stringWithFormat: @"School Name: %@", model.schoolName]];
     [self.numOfTakers setText: [NSString stringWithFormat: @"School Name: %@", model.numOfTakers]];
@@ -110,13 +110,21 @@
     [self.wrAvg setText: [NSString stringWithFormat: @"School Name: %@", model.wrAvg]];
 }
 
+// get data from api
 -(void) getSatScores {
+    // create a url, with dbn argument
     NSString *stringUrl = [NSString stringWithFormat:@"https://data.cityofnewyork.us/resource/f9bf-2cp4.json?dbn=%@", self.dbn];
+    // create an instance from NetworkManager
     NetworkManagerObjc *networkManager = NetworkManagerObjc.new;
+    // invoke the method getSATScores to establish fetching the data
     [networkManager getSATScores:stringUrl withCompletionHandler:^(SATScore *score, NSError *err) {
+        // if the completion returns an error, then exit the method
         if (err) {
+            NSLog(@"Getting data failed %@", err);
             return;
         }
+        // if the completion returns score, then map the data to
+        // labels, and we have to make sure it is running in main thread
         if (score != nil) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self configLabels:score];

@@ -90,7 +90,7 @@ class NYCSchoolTableViewCell : UITableViewCell {
     // prepare for reuse
     override func prepareForReuse() {
         super.prepareForReuse()
-        
+        // reset labels
         schoolName.text = nil
         overview.text = nil
         email.text = nil
